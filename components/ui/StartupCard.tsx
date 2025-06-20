@@ -8,15 +8,15 @@ import { Author, Startup } from "@/sanity.types";
 export type StartupTypeCard = Omit<Startup, "author"> & { author?: Author };
 
 const StartupCard = ({ post } : { post: StartupTypeCard }) => {
-	const { 
-		_createdAt, 
-		views, 
+	const {
+		_createdAt,
+		views,
 		author,
-			title, 
-			category, 
-			_id, 
-			image, 
-			description 
+		title,
+		category,
+		_id,
+		image,
+		description
 		} = post;
 
 	return (
