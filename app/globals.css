@@ -260,3 +260,121 @@ align-items: center; /* often included */
   color: #ffffff !important;
   padding: 0.75rem 1.25rem !important;
 }
+
+.tag {
+  background-color: rgb(204, 204, 37); /* assuming you're using CSS variables for Tailwind colors */
+  padding: 0.75rem 1.5rem;
+  font-family: 'Work Sans', sans-serif;
+  font-weight: bold;
+  border-radius: 0.125rem;
+  text-transform: uppercase;
+  position: relative;
+}
+
+/* Optional: replicate .tag-tri if it's a triangle/decoration class */
+.tag::before {
+  content: '';
+  position: absolute;
+  top: 0.5rem;           /* top-2 = 0.5rem */
+  left: 0.5rem;          /* left-2 = 0.5rem */
+  border-top: 10px solid black;
+  border-right: 10px solid transparent;
+}
+
+.tag::after {
+  content: '';
+  position: absolute;
+  bottom: 0.5rem;        /* bottom-2 = 0.5rem */
+  right: 0.5rem;         /* right-2 = 0.5rem */
+  border-bottom: 10px solid black;
+  border-left: 10px solid transparent;
+}
+
+.sub-heading {
+  font-weight: 500;           /* font-medium */
+  font-size: 20px;            /* text-[20px] */
+  color: white;               /* text-white */
+  max-width: 42rem;           /* max-w-2xl = 672px = 42rem */
+  text-align: center;         /* text-center */
+  word-break: break-word;     /* break-words */
+}
+
+.drop-shadow {
+  filter: drop-shadow( 1px 4px rgba(0, 0, 0, 0.2))
+          drop-shadow(1 4px 3px rgba(0, 0, 0, 0.2));
+}
+
+.category-tag {
+  font-weight: 500;              /* font-medium */
+  font-size: 16px;               /* text-[16px] */
+  background-color: rgb(236, 217, 221); /* bg-primary-100 */
+  padding: 0.5rem 1rem;          /* py-2 = 0.5rem, px-4 = 1rem */
+  border-radius: 9999px;         /* rounded-full */
+}
+
+.text-30-bold {
+  font-size: 50px;      /* text-[30px] */
+  font-weight: 700;     /* font-bold */
+  color: black;         /* text-black */
+}
+
+.view-skeleton {
+  background-color: #a1a1aa;   /* bg-zinc-400 */
+  height: 2.5rem;              /* h-10 = 40px */
+  width: 6rem;                 /* w-24 = 96px */
+  border-radius: 0.5rem;       /* rounded-lg = 8px */
+  position: fixed;             /* fixed positioning */
+  bottom: 0.75rem;             /* bottom-3 = 12px */
+  right: 0.75rem;              /* right-3 = 12px */
+}
+
+.view-container {
+  display: flex;               /* flex */
+  justify-content: flex-end;   /* justify-end */
+  align-items: center;         /* items-center */
+  margin-top: 1.25rem;         /* mt-5 = 20px */
+  position: fixed;             /* fixed */
+  bottom: 0.75rem;             /* bottom-3 = 12px */
+  right: 0.75rem;              /* right-3 = 12px */
+}
+
+.view-text {
+  font-weight: 500;                /* font-medium */
+  font-size: 16px;                 /* text-[16px] */
+  background-color: rgb(236, 217, 221); /* bg-primary-100 */
+  padding: 0.5rem 1rem;            /* py-2 = 0.5rem, px-4 = 1rem */
+  border-radius: 0.5rem;           /* rounded-lg = 8px */
+  text-transform: capitalize;      /* capitalize */
+}
+
+.ping-animate {
+  position: absolute;                    /* absolute */
+  display: inline-flex;                 /* inline-flex */
+  height: 100%;                         /* h-full */
+  width: 100%;                          /* w-full */
+  border-radius: 9999px;                /* rounded-full */
+  background-color: rgb(255, 0, 0); /* bg-primary */
+  opacity: 0.75;                        /* opacity-75 */
+  animation: ping 1s cubic-bezier(0, 0, 0.2, 1) infinite; /* animate-ping */
+}
+
+
+@keyframes ping {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  75%, 100% {
+    transform: scale(2);
+    opacity: 0;
+  }
+}
+
+.ping-static {
+  position: relative;              /* relative */
+  display: inline-flex;            /* inline-flex */
+  width: 11px;                     /* size-[11px] = width & height */
+  height: 11px;
+  border-radius: 9999px;           /* rounded-full */
+  background-color: red;           /* bg-red */
+}
