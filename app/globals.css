@@ -313,7 +313,7 @@ align-items: center; /* often included */
 }
 
 .text-30-bold {
-  font-size: 50px;      /* text-[30px] */
+  font-size: 30px;      /* text-[30px] */
   font-weight: 700;     /* font-bold */
   color: black;         /* text-black */
 }
@@ -377,4 +377,31 @@ align-items: center; /* often included */
   height: 11px;
   border-radius: 9999px;           /* rounded-full */
   background-color: red;           /* bg-red */
+}
+
+.text-20-medium {
+  font-weight: 500;     /* font-medium */
+  font-size: 20px;      /* text-[20px] */
+  color: black;         /* text-black */
+}
+
+.section-startup-container {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+  max-width: 80rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+.section-details-container {
+  padding-left: 20.5rem;
+  padding-right: 0.1rem;
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+  max-width: 80rem;
+  margin-left: auto;
+  margin-right: auto;
 }
