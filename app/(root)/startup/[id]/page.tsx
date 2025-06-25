@@ -8,6 +8,7 @@ import React, { Suspense } from 'react'
 import markdownit from 'markdown-it'
 import { Skeleton } from '@/components/ui/skeleton';
 import View from '@/components/ui/View';
+import DeletePitchButton from '@/components/ui/DeletePitchButton';
 
 const md = markdownit();
 
@@ -49,6 +50,7 @@ const Page = async ({ params }: {params: Promise<{id: string}>}) => {
 									@{post.author.username}
 									</p>
 							</div>
+							
 						</Link>
 						<p className='category-tag'>{post.category}</p>
 					</div>
@@ -65,6 +67,7 @@ const Page = async ({ params }: {params: Promise<{id: string}>}) => {
 				</div>
 
 				<hr className='devider'/>
+				<DeletePitchButton id={post._id} />
 			</section>
 
 			<Suspense fallback={<Skeleton className='view-skeleton'/>}>

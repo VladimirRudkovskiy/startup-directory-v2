@@ -25,7 +25,7 @@ const Page = async ({
 			<section className='profile_container'>
 				<div className='profile_card'>
 					<div className='profile_title'>
-						<h3 className='text-24-black uppercase text-center line-clamp-1'>
+						<h3 className='text-24-black uppercase text-center line-clamp-1 profile_name'>
 							{user.name}
 						</h3>
 					</div>
@@ -38,7 +38,7 @@ const Page = async ({
 					className='profile_image'
 					/>
 
-					<p className='text-30-extrabold mt-7 text-center'>
+					<p className='text-30-extrabold mt-7 text-center profile_name'>
 						@{user.username}
 					</p>
 					<p className='mt-1 text-center text-14-normal'>

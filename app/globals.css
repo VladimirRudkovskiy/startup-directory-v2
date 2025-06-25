@@ -198,7 +198,7 @@ a {
 
 .startup-card:hover {
   border-color: rgb(8, 7, 24);         /* hover:border-primary (example: Tailwind's blue-500) */
-  background-color: rgb(128, 55, 128);     /* hover:bg-primary-100 (example: Tailwind's blue-100) */
+  background-color: rgb(255, 208, 255);     /* hover:bg-primary-100 (example: Tailwind's blue-100) */
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15); /* hover:shadow-300 (example) */
 }
 
@@ -213,7 +213,7 @@ a {
 
 /* Hover effect when parent has class 'group' */
 .group:hover .startup-card-date {
-  background-color: rgb(128, 55, 128); /* Example for white-100 */
+  background-color: rgb(255, 208, 255); /* Example for white-100 */
 }
 
 .text-16-medium {
@@ -521,7 +521,15 @@ align-items: center; /* often included */
 @media (max-width: 1024px) {
   .profile_card {
     width: 100%; /* max-lg:w-full */
+		
   }
+}
+
+.profile_name {
+  white-space: nowrap;         /* Prevents text from wrapping */
+  overflow: hidden;            /* Hides overflow */
+  text-overflow: ellipsis;     /* Adds '...' at the end */
+  max-width: 100%;             /* Ensures it doesn't overflow its parent */
 }
 
 .profile_title {

@@ -56,3 +56,30 @@ export const createPitch = async (
 		}
 
 };
+
+export const deletePitch = async (startupId: string) => {
+	const session = await auth();
+
+	if (!session) {
+		return parseServerActionResponse({
+			error: 'Not signed in',
+			status: 'ERROR',
+		});
+	}
+
+	try {
+		// Delete the document by ID
+		await writeClient.delete(startupId);
+
+		return parseServerActionResponse({
+			error: '',
+			status: 'SUCCESS',
+		});
+	} catch (error) {
+		console.error('Failed to delete startup:', error);
+		return parseServerActionResponse({
+			error: JSON.stringify(error),
+			status: 'ERROR',
+		});
+	}
+};
