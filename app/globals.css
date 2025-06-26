@@ -49,8 +49,8 @@ a {
     background-image: linear-gradient(
             to right,
             transparent 48.5%,
-            rgba(251, 232, 67, 0.2) 49.5%,
-            rgba(251, 232, 67, 0.6) 50.5%,
+            rgba(192, 179, 238, 0.2) 49.5%,
+            rgba(1, 8, 37, 0.6) 50.5%,
             transparent 52%
     );
     background-size: 5% 100%;
@@ -74,7 +74,7 @@ a {
   max-width: 48rem;            /* max-w-3xl */
   width: 100%;                 /* w-full */
   min-height: 80px;            /* min-h-[80px] */
-  background-color: white;     /* bg-white */
+  background-color: rgb(232, 228, 255);    /* bg-white */
   border-width: 5px;           /* border-[5px] */
   border-color: rgb(8, 7, 24);         /* border-black */
   border-radius: 80px;         /* rounded-[80px] */
@@ -97,8 +97,8 @@ a {
 }
 
 .pink-container {
-  width: 100%;                      /* w-full */
-  background-color: rgb(128, 55, 128); /* bg-primary – make sure this custom variable is defined */
+  width: 100%;                      /* w-full */ /* bg-primary – make sure this custom variable is defined */
+	background-color: rgb(128, 55, 128);
   min-height: 530px;               /* min-h-[530px] */
   display: flex;                   /* flex */
   justify-content: center;        /* justify-center */
@@ -439,6 +439,7 @@ align-items: center; /* often included */
   font-weight: 600;
   border-radius: 9999px; /* same as rounded-full */
   margin-top: 0.75rem;
+	background-color: white;
 }
 
 .startup-form_input::placeholder {
@@ -460,6 +461,7 @@ align-items: center; /* often included */
   font-weight: 600;              /* font-semibold */
   border-radius: 20px;
   margin-top: 0.75rem;           /* mt-3 = 12px */
+	background-color: white;
 }
 
 .startup-form_textarea::placeholder {
@@ -614,4 +616,49 @@ align-items: center; /* often included */
   height: 24rem;                 /* h-96 = 384px */
   border-radius: 22px;           /* rounded-[22px] */
   background-color: #a1a1aa;     /* bg-zinc-400 */
+}
+
+
+.gray-background {
+	background-color: rgb(232, 228, 255)
+}
+
+.video-container {
+  width: 100%;                      /* w-full */
+  min-height: 530px;               /* min-h-[530px] */
+  display: flex;                   /* flex */
+  justify-content: center;        /* justify-center */
+  align-items: center;            /* items-center */
+  flex-direction: column;         /* flex-col */
+  padding-top: 2.5rem;            /* py-10 */
+  padding-bottom: 2.5rem;         /* py-10 */
+  padding-left: 1.5rem;           /* px-6 */
+  padding-right: 1.5rem;          /* px-6 */
+}
+
+@keyframes animatedPinkBg {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+
+.animate-create {
+ width: 100%;
+  min-height: 530px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 2.5rem 1.5rem;
+
+  background: linear-gradient(270deg, #802080, #ff66cc, #cc33ff, #802080);
+  background-size: 600% 600%;
+  animation: animatedPinkBg 10s ease infinite;
 }

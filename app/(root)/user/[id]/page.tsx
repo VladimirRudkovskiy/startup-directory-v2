@@ -22,15 +22,17 @@ const Page = async ({
 
 	return (
 		<>
-			<section className='profile_container'>
+		<div className='gray-background'>
+
+			<section className='profile_container gray-background'>
 				<div className='profile_card'>
 					<div className='profile_title'>
-						<h3 className='text-24-black uppercase text-center line-clamp-1 profile_name'>
+						<h3 className='text-24-black uppercase text-center line-clamp-1 profile_name '>
 							{user.name}
 						</h3>
 					</div>
 
-					<Image 
+					<Image
 					src={user.image}
 					alt={user.name}
 					width={220}
@@ -46,7 +48,7 @@ const Page = async ({
 					</p>
 				</div>
 
-				<div className='flex-1 flex flex-col gap-5 lg:-mt-5'>
+				<div className='flex-1 flex flex-col gap-5 lg:-mt-5 '>
 					<p className='text-30-bold'>
 						{session?.id == id ? 'Your' : 'All'} Startups
 					</p>
@@ -58,6 +60,7 @@ const Page = async ({
 					</ul>
 				</div>
 			</section>
+		</div>
 		</>
 	)
 }

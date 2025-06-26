@@ -10,10 +10,13 @@ const Page = async () => {
 
 	return (
 		<>
-			<section className='pink-container !min-h-[230px] gradient-stripe'>
-				<h1 className='heading'>Submit Your Startup</h1>
+		<div className='gray-background'>
+			
+			<section className='animate-create !min-h-[230px] rounded-4xl border-5 border-black '>
+				<h1 className='heading rounded-3xl'>Submit Your Startup</h1>
 			</section>
 			<StartupForm />
+		</div>
 		</>
 	)
 }

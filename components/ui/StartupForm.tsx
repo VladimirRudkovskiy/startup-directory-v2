@@ -78,7 +78,7 @@ const StartupForm = () => {
   });
 
   return (
-    <form action={formAction} className="startup-form">
+    <form action={formAction} className="startup-form gray-background">
       <div>
         <label htmlFor="title" className="startup-form_label">
           Title
@@ -86,7 +86,7 @@ const StartupForm = () => {
         <Input
           id="title"
           name="title"
-          className="startup-form_input"
+          className="startup-form_input text-white ba"
           required
           placeholder="Startup Title"
         />
@@ -154,6 +154,7 @@ const StartupForm = () => {
           id="pitch"
           preview="edit"
           height={300}
+					className="border border-black border-3 overflow-hidden"
           style={{ borderRadius: 20, overflow: "hidden" }}
           textareaProps={{
             placeholder:
