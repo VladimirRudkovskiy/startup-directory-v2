@@ -16,10 +16,10 @@ const nextConfig: NextConfig = {
     },
   ],
 },
-	experimental: {
-		ppr: 'incremental',
-		after: true,
-	},
+	// experimental: {
+	// 	ppr: 'incremental',
+	// 	after: true,
+	// },
 	devIndicators: {
 		buildActivity: true,
 		buildActivityPosition:'bottom-right'
