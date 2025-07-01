@@ -1,5 +1,5 @@
 import { auth, signIn, signOut } from "../../auth"
-import { BadgePlusIcon, LogOutIcon } from 'lucide-react'
+import { BadgePlusIcon, Icon, LogOutIcon } from 'lucide-react'
 import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
@@ -29,7 +29,7 @@ const NavBar = async () => {
 							}}>
 								<button type="submit">
 									<span className='max-sm:hidden'>Log Out</span>
-									<Icon className='size-6 sm:hidden text-red-500'/>
+									<LogOutIcon className='size-6 sm:hidden text-red-500'/>
 								</button>
 							</form>
 
