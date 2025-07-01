@@ -3,8 +3,8 @@
 import { useTransition } from 'react';
 import { useRouter } from 'next/navigation';
 
-import { Button } from '@/components/ui/button';
-import { deletePitch } from '@/lib/actions';
+import { Button } from "../../components/ui/button";
+import { deletePitch } from "../../lib/actions";
 
 export default function DeletePitchButton({ id }: { id: string }) {
 	const [isPending, startTransition] = useTransition();

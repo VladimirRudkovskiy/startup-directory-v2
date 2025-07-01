@@ -1,9 +1,9 @@
-import { auth, signIn, signOut } from '@/auth'
+import { auth, signIn, signOut } from "../../auth"
 import { BadgePlusIcon, LogOutIcon } from 'lucide-react'
 import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
-import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar"
+import { Avatar, AvatarFallback, AvatarImage } from "../../components/ui/avatar"
 
 const NavBar = async () => {
 

@@ -1,16 +1,16 @@
 "use client";
 
 import React, { useState, useActionState } from "react";
-import { Input } from "@/components/ui/input";
-import { Textarea } from "@/components/ui/textarea";
+import { Input } from "../../components/ui/input";
+import { Textarea } from "../../components/ui/textarea";
 import MDEditor from "@uiw/react-md-editor";
-import { Button } from "@/components/ui/button";
+import { Button } from "../../components/ui/button";
 import { Send } from "lucide-react";
-import { formSchema } from "@/lib/validation";
+import { formSchema } from "../../lib/validation";
 import { z } from "zod";
 
 import { useRouter } from "next/navigation";
-import { createPitch } from "@/lib/actions";
+import { createPitch } from "../../lib/actions";
 import { useToast } from "./use-toast";
 
 const StartupForm = () => {
