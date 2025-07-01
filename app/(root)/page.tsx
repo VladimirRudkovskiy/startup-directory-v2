@@ -1,8 +1,9 @@
-import StartupCard, { StartupTypeCard } from "@/components/ui/StartupCard";
+
 import SearchForm from "../../components/ui/SearchForm";
-import { STARTUPS_QUERY } from "@/sanity/lib/queries";
-import { sanityFetch, SanityLive } from "@/sanity/lib/live";
-import { auth } from "@/auth";
+import { STARTUPS_QUERY } from "../../sanity/lib/queries";
+import { sanityFetch, SanityLive } from "../../sanity/lib/live";
+import { auth } from "../../auth";
+import StartupCard, { StartupTypeCard } from "../../components/ui/StartupCard"
 
 
 export default async function Home({ 

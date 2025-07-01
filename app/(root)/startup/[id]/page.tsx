@@ -1,4 +1,4 @@
-import { formatDate } from '@/lib/utils';
+import { formatDate } from "../../../../lib/utils";
 import { client } from '@/sanity/lib/client';
 import { STARTUP_BY_ID_QUERY } from '@/sanity/lib/queries';
 import Image from 'next/image';
