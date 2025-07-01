@@ -649,16 +649,3 @@ align-items: center; /* often included */
 }
 
 
-.animate-create {
- width: 100%;
-  min-height: 530px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  padding: 2.5rem 1.5rem;
-
-  background: linear-gradient(270deg, #802080, #ff66cc, #cc33ff, #802080);
-  background-size: 600% 600%;
-  animation: animatedPinkBg 10s ease infinite;
-}

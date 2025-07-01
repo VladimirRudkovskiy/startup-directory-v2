@@ -12,7 +12,7 @@ const Page = async () => {
 		<>
 		<div className='gray-background'>
 			
-			<section className='animate-create !min-h-[230px] rounded-4xl border-5 border-black '>
+			<section className='pink-container !min-h-[230px] rounded-4xl border-5 border-black '>
 				<h1 className='heading rounded-3xl'>Submit Your Startup</h1>
 			</section>
 			<StartupForm />
