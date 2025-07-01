@@ -1,14 +1,14 @@
 import { formatDate } from "../../../../lib/utils";
-import { client } from '@/sanity/lib/client';
-import { STARTUP_BY_ID_QUERY } from '@/sanity/lib/queries';
+import { client } from "../../../../sanity/lib/client";
+import { STARTUP_BY_ID_QUERY } from "../../../../sanity/lib/queries";
 import Image from 'next/image';
 import Link from 'next/link';
 import { notFound } from 'next/navigation';
 import React, { Suspense } from 'react'
 import markdownit from 'markdown-it'
-import { Skeleton } from '@/components/ui/skeleton';
-import View from '@/components/ui/View';
-import DeletePitchButton from '@/components/ui/DeletePitchButton';
+import { Skeleton } from "../../../../components/ui/skeleton";
+import View from "../../../../components/ui/View";
+import DeletePitchButton from "../../../../components/ui/DeletePitchButton";
 
 const md = markdownit();
 

@@ -1,5 +1,5 @@
-import { auth } from '@/auth'
-import StartupForm from '@/components/ui/StartupForm'
+import { auth } from "../../../../auth"
+import StartupForm from "../../../../components/ui/StartupForm"
 import { redirect } from 'next/navigation';
 import React from 'react'
 
