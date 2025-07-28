@@ -27,6 +27,7 @@ const Page = async ({ params }: {params: Promise<{id: string}>}) => {
 	return (
 		<>
 			<section className='pink-container rounded-4xl  gradient-stripe !min-h-[230px]'>
+				
 				<p className='tag'>
 					{formatDate(post?._createdAt)}
 				</p>
