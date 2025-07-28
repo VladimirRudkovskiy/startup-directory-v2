@@ -9,6 +9,7 @@ import markdownit from 'markdown-it'
 import { Skeleton } from "../../../../components/ui/skeleton";
 import View from "../../../../components/ui/View";
 import DeletePitchButton from "../../../../components/ui/DeletePitchButton";
+import { auth } from "@/auth";
 
 const md = markdownit();
 
@@ -22,6 +23,8 @@ const Page = async ({ params }: {params: Promise<{id: string}>}) => {
 	if(!post) return notFound();
 
 	const parsedContent = md.render(post?.pitch || '');
+	const currentUser = await auth();
+	const isAuthor = currentUser?.id === post.author?._id;
 
 
 	return (
@@ -68,7 +71,7 @@ const Page = async ({ params }: {params: Promise<{id: string}>}) => {
 				</div>
 
 				<hr className='devider'/>
-				<DeletePitchButton id={post._id} />
+				{isAuthor && <DeletePitchButton id={post._id} />}
 			</section>
 
 			<Suspense fallback={<Skeleton className='view-skeleton'/>}>
