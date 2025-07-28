@@ -4,7 +4,6 @@ import Image from "next/image";
 import Link from "next/link"
 import { Button } from "./button";
 import { Author, Startup } from "../../sanity.types";
-import DeletePitchButton from "./DeletePitchButton";
 
 export type StartupTypeCard = Omit<Startup, "author"> & { author?: Author };
 
@@ -51,7 +50,6 @@ const StartupCard = ({ post } : { post: StartupTypeCard }) => {
 					src={author?.image}
 					alt={author?.name} width={48} height={48} className="rounded-full"
 					/>
-					<DeletePitchButton id={post._id} />
 				</Link>
 			</div>
 
